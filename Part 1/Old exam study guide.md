@@ -469,6 +469,7 @@ Number("123qwe") // NaN
 - The difference between strict equality and loose equality operator is that loose equality operator `==` attempts to convert operands to the same type before comparing, and strict equality operator does not. 
 - **Loose equality / non-strict equality operator**   is `==`
   - Loose equality operators perform implicit type coercion when comparing operands are of different types. It will attempt to ceorce operands to the same type before comparing. 
+  - Launch school: number `==` string, the string is coerced to a number.
 - **Strict equality** operator is `===` and `!==` . Strict equality operator compares two operands and returns a Boolean result. It checks whether the operands are of different types. It adheres to the Strict Equality Comparison Algorithm. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)
   - If the operands are of different types, it returns `false`
   - If both operands are objects, only return `true` if they refer to the same object. 
@@ -1239,7 +1240,6 @@ Object & non-mutating operations
    ```js
    [1, 2].map(element => return 1 );
    ```
-
 
 **Anonymous Function**: a function with no name. They are invoked by the variable name. Arrow functions are always anonymous.  
 
